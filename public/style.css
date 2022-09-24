@@ -1,0 +1,181 @@
+/*----------------------CSS RESET------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-------------------------------------------------------*/
+.fixedMenu {
+    position: fixed;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(99, 218, 255, 0.3);
+    height: 80px;
+    width: 100%;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fixedMenu h2 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 30px;
+    text-shadow: 0px 4px 15px rgba(253, 21, 118, 0.4);
+}
+
+.container {
+    padding-top: 120px;
+    width: 70%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.main {
+    display: block;
+    padding-left: 15px;
+}
+
+.main h2 {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.main form .field * {
+    font-family: "Montserrat";
+    font-size: 16px;
+    display: block;
+}
+
+.main form .field label {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.main form .field input {
+    margin-bottom: 25px;
+    padding: 5px;
+    width: 250px;
+}
+
+.main form .field input:focus {
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 0 0 3px rgba(12, 170, 255, 0.5);
+}
+
+.main form .button-blue {
+    padding: 12px 22px;
+    font-family: Montserrat;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(47, 144, 255);
+    border: 3px solid rgb(47, 144, 255);
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+
+    transition: all 0.3s ease;
+}
+
+.main form .button-blue:hover {
+    color: rgb(47, 144, 255);
+    background-color: white;
+    border: 3px solid rgb(47, 144, 255);
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    min-width: 320px;
+    padding: 15px;
+}
+
+.item .content {
+    font-family: "Montserrat";
+    line-height: 1.65;
+}
+
+.item .content .header {
+    color: rgb(47, 144, 255);
+    font-weight: 500;
+}
+
+.item:hover {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px rgba(33, 148, 255, 0.4);
+    border-radius: 10px;
+}
+
+.avatar {
+    content: url('https://api.iconify.design/ph/user-list-duotone.svg?color=%232194ff');
+    min-width: 45px;
+    margin-right: 20px;
+}
+
+body {
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+@media (max-width: 412px) {
+    .container {
+        width: 95%;
+    }
+
+    .item {
+        width: 88%;
+    }
+
+    .avatar {
+        min-width: 37px;
+    }
+
+    .item .content {
+        font-size: 14px;
+    }
+}
